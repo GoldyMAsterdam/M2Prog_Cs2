@@ -1,7 +1,11 @@
 ﻿namespace Readlines
 {
-    class Program
+    internal class Program
     {
+        string[] vragen = new string[] {
+            "What is 1997 N64 video game, features James Bond and is named after the 1995 film?",
+            "What arcade game was called Puckman in Japan"
+        };
         static void Main(string[] args)
         {
             Vraag1();
@@ -10,6 +14,7 @@
             Vraag4();
             Vraag5();
             Vraag6();
+            Vraag7();
         }
 
         internal static void Vraag1()
@@ -41,6 +46,19 @@
         {
             Console.WriteLine("Which species would be the rudest if all animals could talk?");
             string antwoord = Console.ReadLine();
+        }
+        internal static string Vraag7()
+        {
+            Console.WriteLine("Hoe oud ben jij");
+            string antwoord = Console.ReadLine();
+            return antwoord;
+        }
+        internal string GetVraag(int vraagIndex)
+        {
+            return vragen[vraagIndex];
+            string vraag1 = GetVraag(1);
+            string vraag2 = GetVraag(2);
+            string vraag3 = GetVraag(3);
         }
     }
 }
