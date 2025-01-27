@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Nos.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Nos.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="quiz.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
